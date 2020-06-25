@@ -17,9 +17,13 @@ List<String> list1 = new ArrayList<String>();
 list1.add("Hello");
 list1.add("world");
 list1.add("!!!");
-// Serialize
+
+// byte array serialization
+byte[] bytes = ff.toBytes(list1);
+List<String> listFromBytes = ff.fromBytes(bytes);
+
+// File Serialization
 ff.save(list1, "mylist.bin");
-// Deserialize
-List<String> list2 = ff.open("mylist.bin");
-// list1.equals(list2)
+List<String> listFromFile = ff.open("mylist.bin");
+// list1.equals(listFromFile)
 ```
