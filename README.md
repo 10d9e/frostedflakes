@@ -17,8 +17,9 @@ List<String> list1 = new ArrayList<String>();
 list1.add("Hello");
 list1.add("world");
 list1.add("!!!");
-// Checking the equality
+// Serialize
 ff.save(list1, "mylist.bin");
+// deserialize
 List<String> list2 = ff.open("mylist.bin");
 // list1.equals(list2)
 ```
