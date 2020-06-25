@@ -19,7 +19,7 @@ list1.add("world");
 list1.add("!!!");
 // Serialize
 ff.save(list1, "mylist.bin");
-// deserialize
+// Deserialize
 List<String> list2 = ff.open("mylist.bin");
 // list1.equals(list2)
 ```
