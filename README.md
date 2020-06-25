@@ -11,7 +11,7 @@ The endgame is to be able to snapshot any java runtime stack and reinflate it at
 
 ```java
 // Initialize FrostedFlakes
-IFrostedFlakes<A> ff = new FrostedFlakes<>();
+IFrostedFlakes<List> ff = new FrostedFlakes<>();
 // Create and populate a new list
 List<String> list1 = new ArrayList<String>();
 list1.add("Hello");
