@@ -9,16 +9,16 @@ The endgame is to be able to snapshot any java runtime stack and reinflate it at
 
 # Show me the code
 
-```
+```java
 // Initialize FrostedFlakes
-IFrostedFlakes<A> FLAKES = new FrostedFlakes<>();
+IFrostedFlakes<A> ff = new FrostedFlakes<>();
 // Create and populate a new list
 List<String> list1 = new ArrayList<String>();
 list1.add("Hello");
 list1.add("world");
 list1.add("!!!");
 // Checking the equality
-FLAKES.save(list1, "mylist.bin");
-List<String> list2 = FLAKES.open("mylist.bin");
+ff.save(list1, "mylist.bin");
+List<String> list2 = ff.open("mylist.bin");
 // list1.equals(list2)
 ```
