@@ -22,7 +22,7 @@ list1.add("!!!");
 byte[] bytes = ff.toBytes(list1);
 List<String> listFromBytes = ff.fromBytes(bytes);
 
-// File Serialization
+// file serialization
 ff.save(list1, "mylist.bin");
 List<String> listFromFile = ff.open("mylist.bin");
 // list1.equals(listFromFile)
